@@ -1,0 +1,50 @@
+.nouvelle-main {
+    width: 100%;
+
+    > h1, > h4 {
+        margin-left: 40px;
+    }
+
+    .nouvelle-grille {
+        width: 70%;
+        margin: 0 auto;
+
+
+        div {
+            display: flex;
+            margin: 20px 0;
+            flex-wrap: wrap;
+
+            .nouvelle-thumbnail {
+
+                img {
+                    width: 300px;
+                    height: 100%;
+                }
+            }
+
+            .nouvelle-title {
+                padding-left: 20px;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    text-decoration: none;
+    
+                    h1 {
+                        color: black;
+                    }
+                }
+
+                .rm {
+                    width: 150px;
+                }
+            }
+
+            .nouvelle-full {
+
+            }
+        }
+    }
+}

@@ -192,6 +192,57 @@ header .main-navigation .sub-menu {
   height: 100px;
 }
 
+.nouvelle-main {
+  width: 100%;
+}
+
+.nouvelle-main > h1, .nouvelle-main > h4 {
+  margin-left: 40px;
+}
+
+.nouvelle-main .nouvelle-grille {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.nouvelle-main .nouvelle-grille div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nouvelle-main .nouvelle-grille div .nouvelle-thumbnail img {
+  width: 300px;
+  height: 100%;
+}
+
+.nouvelle-main .nouvelle-grille div .nouvelle-title {
+  padding-left: 20px;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.nouvelle-main .nouvelle-grille div .nouvelle-title a {
+  text-decoration: none;
+}
+
+.nouvelle-main .nouvelle-grille div .nouvelle-title a h1 {
+  color: black;
+}
+
+.nouvelle-main .nouvelle-grille div .nouvelle-title .rm {
+  width: 150px;
+}
+
 .cours-main {
   margin: 10px 10px;
 }
