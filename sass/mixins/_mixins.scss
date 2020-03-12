@@ -1,0 +1,9 @@
+@mixin rayure {
+    background: repeating-linear-gradient(
+                        45deg,
+                        lightblue,
+                        lightblue 10px,
+                        lighten(lightblue, 10%) 10px,
+                        lighten(lightblue, 10%) 20px
+                        );
+}

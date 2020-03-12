@@ -1,0 +1,337 @@
+@charset "UTF-8";
+/*!
+Theme Name: tp_SavoieJulien-enfant
+Theme URI: http://underscores.me/
+Author: Julien Savoie
+Author URI: http://savoie.dev
+template: tp_js
+Description: Un thème.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: tp_js
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+tp_SavoieJulien is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+header {
+  width: 100%;
+  max-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  background-color: white;
+}
+
+header .site-branding {
+  margin: 0 0 0 40px;
+}
+
+header .main-navigation {
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 30vw;
+  margin: 0 40px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .main-navigation .menu-navigation-container {
+  width: 100%;
+}
+
+header .main-navigation .menu {
+  padding: 0 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+}
+
+header .main-navigation .menu .menu-item-has-children:hover ~ .sub-menu {
+  display: block;
+}
+
+header .main-navigation .sub-menu {
+  display: none;
+  list-style-type: none;
+}
+
+.hero-img-pc {
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.section-evenements .section-evenements-conteneur ul {
+  list-style-type: none;
+}
+
+.section-evenements .section-evenements-conteneur ul li {
+  margin: 30px 0;
+}
+
+.section-evenements .section-evenements-conteneur ul li .site-conference {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-evenements .section-evenements-conteneur ul li .site-conference .site-conference-info {
+  width: 40%;
+}
+
+.section-evenements .section-evenements-conteneur ul li div img {
+  width: 300px;
+  height: 200px;
+  padding-right: 10px;
+}
+
+#content.site-content {
+  max-width: 100vw;
+}
+
+.section-title {
+  margin-left: 40px;
+}
+
+.site-news {
+  width: 80%;
+  margin: 0 auto;
+  max-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.site-news .site-news-container-unique .site-news-news-post-title {
+  font-size: 1em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.site-news .site-news-container-unique img {
+  width: 200px;
+  height: 100px;
+}
+
+.cours-main {
+  margin: 10px 10px;
+}
+
+.cours-main .cours-grille {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: (100px)[7];
+      grid-template-rows: repeat(7, 100px);
+  text-align: center;
+}
+
+.cours-main .cours-grille .titre-domaine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: repeating-linear-gradient(45deg, lightblue, lightblue 10px, #d4ebf2 10px, #d4ebf2 20px);
+}
+
+.cours-main .cours-grille .titre-domaine h1 {
+  font-size: 1.3em;
+  color: gray;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.cours-main .cours-grille .d1 {
+  background-color: darkblue;
+}
+
+.cours-main .cours-grille .d2 {
+  background-color: #0000be;
+}
+
+.cours-main .cours-grille .d3 {
+  background-color: #0000f1;
+}
+
+.cours-main .cours-grille .d4 {
+  background-color: #2525ff;
+}
+
+.cours-main .cours-grille .d5 {
+  background-color: #5858ff;
+}
+
+.cours-main .cours-grille .d6 {
+  background-color: #8b8bff;
+}
+
+.cours-main .cours-grille div {
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cours-main .cours-grille div a {
+  margin: 0;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+}
+
+.cours-main .cours-grille div a h1 {
+  margin: 0;
+  color: white;
+  font-size: 1em;
+}
+
+.cours-main .cours-grille div a h1:hover {
+  color: blue;
+}
+
+.cours-main .cours-grille div a h1:focus {
+  color: purple;
+}
+
+.cours-main .cours-grille div a h1:active {
+  color: green;
+}
+
+.cours-main .cours-grille div a .session-titre {
+  margin-left: 4px;
+  color: red;
+}
+
+.cours-main .cours-grille div a .barre-titre {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.cours-main .cours-grille div a .domaine-titre {
+  margin-left: 4px;
+  color: blue;
+}
+
+.site-footer {
+  margin: 100px 0 20px 0;
+}
+
+.site-footer .site-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.site {
+  max-width: 100vw;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+/*# sourceMappingURL=style.css.map */

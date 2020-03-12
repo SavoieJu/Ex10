@@ -1,0 +1,95 @@
+.cours-main {
+    margin: 10px 10px;
+
+    .cours-grille {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(7, 100px);
+        text-align: center;
+
+        .titre-domaine {
+            display: flex;
+            justify-content: center;
+            @include rayure;
+
+            h1 {
+                font-size: 1.3em;
+                color: gray;
+                text-align: center;
+                align-self: center;
+            }
+        }
+
+        .d1 {
+            background-color: lighten($couleur-grille, 0%);
+        }
+
+        .d2 {
+            background-color: lighten($couleur-grille, 10%);
+        }
+
+        .d3 {
+            background-color: lighten($couleur-grille, 20%);
+        }
+
+        .d4 {
+            background-color: lighten($couleur-grille, 30%);
+        }
+
+        .d5 {
+            background-color: lighten($couleur-grille, 40%);
+        }
+
+        .d6 {
+            background-color: lighten($couleur-grille, 50%);
+        }
+    
+        div {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+
+            a {
+                margin: 0;
+                align-self: center;
+                display: flex;
+                text-decoration: none;
+
+                h1 {
+                    margin: 0;
+                    color: white;
+                    font-size: 1em;
+
+                    &:hover {
+                        color: $hover;
+                    }
+
+                    &:focus {
+                        color: $focus;
+                    }
+
+                    &:active {
+                        color: $active;
+                    }
+                }
+
+                .session-titre {
+                    margin-left: 4px;
+                    color: red;
+                }
+
+                .barre-titre {
+                    margin-left: 4px;
+                    margin-right: 4px;
+                }
+                
+                .domaine-titre {
+                    margin-left: 4px;
+                    color: blue;
+                }
+
+            }
+        }
+    }
+}

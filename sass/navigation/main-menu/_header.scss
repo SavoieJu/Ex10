@@ -1,0 +1,47 @@
+header {
+  width: 100%;
+  max-width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  background-color: white;
+
+  .site-branding {
+    margin: 0 0 0 40px;
+  }
+
+  .main-navigation {
+    align-self: center;
+    width: 30vw;
+    margin: 0 40px 0 0;
+    display: flex;
+    justify-content: space-between;
+
+    .menu-navigation-container {
+      width: 100%;
+    }
+    .menu {
+      padding: 0 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+
+      .menu-item-has-children {
+        &:hover ~ .sub-menu {
+          display: block;
+        }
+      }
+    }
+
+    .sub-menu {
+      display: none;
+      list-style-type: none;
+    }
+  }
+}
+
+.hero-img-pc {
+  width: 100%;  
+  // max-width: 100vw;  
+}

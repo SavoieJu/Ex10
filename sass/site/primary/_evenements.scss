@@ -1,0 +1,32 @@
+// .evenement-main {
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+
+//     .evenement-grille {
+//         align-self: center;
+//         width: 70%;
+
+//         display: grid;
+//         grid-template-columns: 1fr 1fr 1fr;
+//         grid-template-rows: repeat(31, 100px);
+//         text-align: center;
+
+//         div {
+//             border: 1px solid black;
+
+//             h1 {
+//                 font-size: 1em;
+//                 white-space: nowrap;
+//                 overflow: hidden;
+//                 text-overflow: ellipsis;
+//                 max-width: 80%;
+//             }
+//         }
+
+//         .test {
+//             grid-area: 15 / 2 / span 1 / span 1;
+//         }
+
+//     }
+// }
